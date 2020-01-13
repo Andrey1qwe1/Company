@@ -168,23 +168,20 @@ ul {
     padding: 15px 0px;
     background: url('../images/top-menu-bg.png') repeat-x;
 }
-    .navigation__mob-menu{
-        margin-left: -25px;
-        margin-top: -5px;
-    }
     .mob-menu{
         display: none;
         color: #ffffff;
     }
         .mob-menu__icon{
             float: left;
-            width: 28px;
-            height: 28px;
+            width: 26px;
+            height: 26px;
             background: url('../images/mob-menu-icon.png') no-repeat center;
             background-size: cover;
         }
         .mob-menu__btn{
-            margin-top: -5px;
+            margin-top: -8px;
+            margin-left: 2px;
             padding: 10px 15px;
             color: inherit;
             background: transparent;
