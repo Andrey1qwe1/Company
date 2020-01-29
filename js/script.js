@@ -17,28 +17,6 @@ var mobMenu = document.querySelector('.mob-menu');
 var navigation = document.querySelector('.navigation');
 var navigationList = document.querySelector('.navigation__list');
 
-// if (window.innerWidth <= 480) {
-// 	window.onresize = function () {
-// 		navigationList.style.display = 'flex';
-// 		navigationList.style.flexDirection = 'column';
-// 	};
-// } else {
-// 	window.onresize = function () {
-// 		navigationList.style.display = 'flex';
-// 		navigationList.style.flexDirection = 'row';
-// };
-// }
-
-// mobMenu.onclick = function() {
-// 	if (navigationList.style.display == 'flex') {
-// 		navigationList.style.display = 'none';
-// 	}
-// 	else {
-// 		navigationList.style.display = 'flex';
-// 		navigationList.style.flexDirection = 'column';
-// 	}
-// };
-
 mobMenu.onclick = function() {
 	if (navigationList.classList.contains('navigation__list_shown')) {
 		navigationList.classList.remove('navigation__list_shown');

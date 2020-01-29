@@ -22,7 +22,7 @@
 	.logo__text {
 		margin-left: 24px;
 		margin-top: 18px;
-		font-size: 27px;
+		font-size: 26.5px;
 		text-transform: uppercase;
 	}
 	.header__content {
@@ -58,7 +58,7 @@
 	.header__title {
 		font-size: 22px;
 		position: absolute;
-		top: 112px;
+		top: 110px;
 		right: 12vw;
 		line-height: 30px;
 	}
@@ -93,7 +93,7 @@
 	}
 	.navigation {
 		width: 100vw;
-		/* height: 442px; */
+		height: auto;
 		min-width: 320px;
 		padding-left: 50px;
 		right: 5px;
@@ -117,10 +117,10 @@
 	}
 	.navigation__submenu {
 		display: block;
-		width: 83vw;
+		width: 83.1vw;
 		min-height: 157px;
 		padding-bottom: 5px;
-		padding-top: 15px;
+		padding-top: 17px;
 		padding-left: 9px;
 		margin-left: -20px;
 		list-style: none;
@@ -131,6 +131,7 @@
 	.navigation__sub-item {
 		display: inline-block;
 		padding: 9px 11px;
+		padding-bottom: 8px;
 		font-size: 15px;
 		font-style: italic;
 	}
@@ -155,12 +156,12 @@
 		font-size: 14px;
 	}
 	.navigation__item {
-		margin-bottom: 18px;
+		margin-bottom: 18.5px;
 	}
 	.content {
 		width: 100vw;
 		min-width: 320px;
-		padding-top: 39px;
+		padding-top: 36px;
 	}
 	.catalog {
 		width: 90vw;
@@ -186,7 +187,6 @@
 		height: 134px;
 	}
 	.catalog__title {
-		font-size: 14px;
 		width: 43vw;
 	}
 	.catalog-menu {
@@ -201,6 +201,7 @@
 		color: #058b7a;
 			font-size: 21px;
 			margin-bottom: 18px;
+			margin-top: 74px;
 	}
 	.news__item {
 		line-height: 19px;
@@ -222,10 +223,11 @@
 		font-size: 15px;
 		display: inline-block;
 		margin-bottom: 26px;
+		margin-left: 0;
 	}
 	.text{
 		width: 90vw;
-		padding-left: 5px;
+		padding-left: 6px;
 		font-size: 15px;
 		margin-bottom: -15px;
 		margin-top: -4px;
@@ -284,6 +286,11 @@
 		display: none;
 	}
 }
+@media (max-width: 435px) {
+	.profile-enter {
+		padding-left: 4vw;
+	}
+}
 @media (max-width: 430px) {
 	.header-logo {
 		margin-top: 10px;
@@ -310,7 +317,7 @@
 }
 @media (max-width: 422px) {
 	.navigation {
-		height: 480px;
+		/* height: 480px; */
 	}
 	.cart-info {
 		font-size: 11px;
@@ -382,11 +389,6 @@
 	}
 }
 @media (max-width: 365px) {
-	.navigation {
-		/* height: 510px; */
-	}
-}
-@media (max-width: 365px) {
 	.cart-info {
 		margin-right: 1vw;
 	}
@@ -406,3 +408,13 @@
 		margin-left: 15px;
 	}	
 }
+@media (max-width: 328px) {
+	.cart-info {
+		margin-right: 0;
+	}
+	.profile-enter {
+		padding-left: 3vw;
+	}
+
+}
+
