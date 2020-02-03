@@ -59,14 +59,15 @@
 		font-size: 22px;
 		position: absolute;
 		top: 110px;
-		right: 12vw;
+		right: 60px;
 		line-height: 30px;
 	}
 	.header__submenu {
-		margin-top: 10px;
+		margin-top: 9px;
 		width: 89vw;
 		min-width: auto;
-		min-height: 35px;
+		min-height: 36px;
+		padding-top: 2px;
 	}
 	.profile-enter {
 		padding-top: 9px;
@@ -156,12 +157,13 @@
 		font-size: 14px;
 	}
 	.navigation__item {
-		margin-bottom: 18.5px;
+		margin-bottom: 18.4px;
+		font-size: 14.5px;
 	}
 	.content {
 		width: 100vw;
 		min-width: 320px;
-		padding-top: 36px;
+		padding-top: 35px;
 	}
 	.catalog {
 		width: 90vw;
@@ -188,6 +190,8 @@
 	}
 	.catalog__title {
 		width: 43vw;
+		margin-top: 8px;
+		font-size: 14.8px;
 	}
 	.catalog-menu {
 		display: none;
@@ -228,8 +232,9 @@
 	.text{
 		width: 90vw;
 		padding-left: 6px;
+		padding-right: 16px;
 		font-size: 15px;
-		margin-bottom: -15px;
+		margin-bottom: -4px;
 		margin-top: -4px;
 		float: left;
 	}
@@ -241,7 +246,7 @@
 	.text__paragraph {
 		text-align: left;
 		line-height: 135%;
-		margin-bottom: 10px;
+		margin-bottom: 9.5px;
 	}
 	.footer {
 		width: 100vw;
@@ -249,7 +254,7 @@
 		padding-top: 40px;
 	}
 	.footer__copyright {
-		margin-top: 2px;
+		margin-top: 1px;
 		margin-left: 0.5vw;
 		width: 135px;
 	}
@@ -316,9 +321,6 @@
 	}
 }
 @media (max-width: 422px) {
-	.navigation {
-		/* height: 480px; */
-	}
 	.cart-info {
 		font-size: 11px;
 	}
