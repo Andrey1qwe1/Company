@@ -12,7 +12,8 @@
 		min-width: 320px;
 	}
 	.logo {
-		width: 88.8vw;
+		width: 88.5vw;
+		margin-left: 3px;
 	}
 
 	.logo__img {
@@ -20,7 +21,7 @@
     margin-left: 10.4vw;
 	}
 	.logo__text {
-		margin-left: 24px;
+		margin-left: 23px;
 		margin-top: 18px;
 		font-size: 26.5px;
 		text-transform: uppercase;
@@ -47,23 +48,24 @@
 		display: block;
 		position: absolute;
 		top: 31px;
-		right: 19.5vw;
+		right: 19vw;
 	}
 	.header__phone {
 		display: block;
 		position: absolute;
 		top: 6px;
-		right: 15vw;
+		right: 14.7vw;
 	}
 	.header__title {
 		font-size: 22px;
 		position: absolute;
 		top: 110px;
-		right: 60px;
+		right: 58px;
 		line-height: 30px;
 	}
 	.header__submenu {
 		margin-top: 9px;
+		margin-left: 3px;
 		width: 89vw;
 		min-width: auto;
 		min-height: 36px;
@@ -105,7 +107,7 @@
 	}
 	.mob-menu__btn {
 		margin-top: -4px;
-		margin-left: 5px;
+		margin-left: 4px;
 		font-size: 14px;
 		padding: 10px 15px;
 		color: inherit;
@@ -153,7 +155,6 @@
 		width: 90vw;
 		flex-direction: column;
 		margin-top: 18px;
-		margin-left: 0vw;
 		font-size: 14px;
 	}
 	.navigation__item {
@@ -168,7 +169,7 @@
 	.catalog {
 		width: 90vw;
 		margin-bottom: -67px;
-		margin-right: 0;
+		margin-right: -2px;
 	}
 	.catalog__item{
 		margin-bottom: 81px; 
@@ -181,11 +182,11 @@
     	margin-right: 0;
     }
     .catalog__item:nth-child(2n-1) {
-		margin-right: 5.6vw;
-		margin-left: 3px;
+		margin-right: 6vw;
+		margin-left: 2px;
     }
 	.catalog__image{
-		width: 40.2vw;
+		width: 40.5vw;
 		height: 134px;
 	}
 	.catalog__title {
@@ -206,6 +207,7 @@
 			font-size: 21px;
 			margin-bottom: 18px;
 			margin-top: 74px;
+			margin-left: 3px;
 	}
 	.news__item {
 		line-height: 19px;
@@ -236,6 +238,7 @@
 		font-size: 15px;
 		margin-bottom: -4px;
 		margin-top: -4px;
+		margin-left: 2px;
 		float: left;
 	}
 	.text__title {
@@ -255,7 +258,7 @@
 	}
 	.footer__copyright {
 		margin-top: 1px;
-		margin-left: 0.5vw;
+		margin-left: 1vw;
 		width: 135px;
 	}
 	.footer__company {
@@ -279,7 +282,7 @@
 		display: none;
 	}
 	.developer {
-		padding-right: 5px;
+		padding-right: 2px;
 	}
 	.stat {
 		margin-top: 47px;
