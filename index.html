@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="http://allfont.ru/allfont.css?fonts=arial-narrow" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
@@ -12,28 +13,37 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <div class="header-logo">
-          <img  class="logo__img" src="images/logo.png" alt="Логотип">
+      <div class="header__flex-container">
+        <div class="logo">
+          <div class="header-logo">
+            <img  class="logo__img" src="images/logo.png" alt="Логотип">
+          <div class="logo__text">Company</div>
         </div>
-        <div class="logo__text">Company</div>
-      </div>
-      <div class="header__content">
-      	<h1 class="header__info header__title">Нанотехнологии здоровья</h1>
-  	  	<div class="header__info header__contacts">
-  	    	<a href="mailto:info@company.ru" class="header__email">info@company.ru</a>
-  	    	<a href="tel:+7(383)349-18-49" class="header__phone">+7 (383) 349-18-49</a>
-  	  	</div>
-      </div>
-      <div class="header__submenu">
-        <form action="#" class="profile-enter">
-          <label class="profile-enter__label"><span class="profile-enter__text">Логин:</span> <input type="text" value="" class="input profile-enter__input"></label>
-          <label class="profile-enter__label"><span class="profile-enter__text">Пароль:</span> <input type="password" value="" class="input profile-enter__input"></label>
-          <button type="submit" class="profile-enter__link header__link">Войти</button>
-          <a href="#" class="profile-enter__link header__link">Регистрация</a>
-        </form>
-        <div class="cart-info">
-          <a href="#"><img class="cart-icon" src="images/cart.png" alt="Корзина"></a>В <a href="#" class="header__link">корзине</a> товаров &mdash; <span class="cart-info__counter">12</span>
+          <div class="header__content_mobile">
+            <div class="header__info header__contacts">
+              <a href="tel:+7(383)349-18-49" class="header__phone">+7 (383) 349-18-49</a>
+              <a href="mailto:info@company.ru" class="header__email">info@company.ru</a>
+            </div>
+            <h2 class="header__info header__title">Нанотехнологии здоровья</h2>
+          </div>
+        </div>
+        <div class="header__content">
+          <h2 class="header__info header__title">Нанотехнологии здоровья</h2>
+          <div class="header__info header__contacts">
+            <a href="mailto:info@company.ru" class="header__email">info@company.ru</a>
+            <a href="tel:+7(383)349-18-49" class="header__phone">+7 (383) 349-18-49</a>
+          </div>
+        </div>
+        <div class="header__submenu">
+          <form action="#" class="profile-enter">
+            <label class="profile-enter__label"><span class="profile-enter__text">Логин:</span> <input type="text" value="" class="input profile-enter__input"></label>
+            <label class="profile-enter__label"><span class="profile-enter__text">Пароль:</span> <input type="password" value="" class="input profile-enter__input"></label>
+            <button type="submit" class="profile-enter__link header__link">Войти</button>
+            <a href="#" class="profile-enter__link header__link">Регистрация</a>
+          </form>
+          <div class="cart-info">
+            <a href="#"><img class="cart-icon" src="images/cart.png" alt="Корзина"></a>В <a href="#" class="header__link">корзине</a> товаров &mdash; <span class="cart-info__counter">12</span>
+          </div>
         </div>
       </div>
     </div>
@@ -44,9 +54,9 @@
         <button type="button" class="mob-menu__btn">Меню</button><div class="mob-menu__icon"></div>
       </div>
       <ul class="navigation__list navigation__list_shown">
-        <li class="navigation__item"><a href="#">Главная</a></li>
-        <li class="navigation__item navigation__item_mob-active"><a href="#">Каталог</a>
-        <ul class="navigation__submenu">
+        <li class="navigation__item"><a class="navigation__link" href="#">Главная</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a>
+        <ul class="navigation__submenu navigation__submenu_hidden">
           <li class="navigation__sub-item"><a href="#">Электронные сигареты</a></li>
           <li class="navigation__sub-item"><a href="#">Трубки</a></li>
           <li class="navigation__sub-item"><a href="#">Картриджи</a></li>
@@ -56,10 +66,10 @@
           <li class="navigation__sub-item"><a href="#">Жидкости для заправки</a></li>
           <li class="navigation__sub-item"><a href="#">Подарочные наборы</a></li>
         </ul></li>
-        <li class="navigation__item"><a href="#">О компании</a></li>
-        <li class="navigation__item"><a href="#">Новости</a></li>
-        <li class="navigation__item"><a href="#">Доставка и оплата</a></li>
-        <li class="navigation__item"><a href="#">Контакты</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">О компании</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Новости</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Доставка и оплата</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
       </ul>
     </div>
   </nav>
@@ -169,7 +179,7 @@
           <li class="footer__nav-item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <div class="developer">Разработка сайта — <a href="#" class="developer__link">ITConstruct</a>
+      <div class="developer">Разработка сайта — <a href="#" class="developer__link" target="_blank">ITConstruct</a>
       	<div class="stat"><img src="images/stat.png" alt="Статистика"></div>
       </div>
     </div>

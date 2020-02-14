@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Tahoma, sans-serif;
 }
 a {
     color: inherit;
@@ -28,16 +28,19 @@ ul {
     margin: 0 auto;
 }
 .header {
-    height: 270px;
+    min-height: 270px;
     background: url("../images/back.png") repeat;
     color: #e7eeef;
     padding-top: 15px;
     min-width: 1000px;
-    position: relative;
 }
+    .header__flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .header__content {
+        position: relative;
         margin-left: 10px;
-        float: left;
         width: 725px;
         height: 201px;
         background: url('../images/background.jpg') no-repeat center;
@@ -45,17 +48,21 @@ ul {
         border: 1px solid #929292;
         border-radius: 17px;
     }
+    .header__content_mobile {
+        display: none;
+    }
     .header__info {
         padding: 0 30px;
         background: rgba(0, 0, 0, 0.3);
         z-index: 2;
     }
     .header__title {
-        position: absolute;
         margin-left: 288px;
-        margin-top: 12px;
-        height: 47px;
+        margin-top: 13px;
+        min-height: 47px;
+        max-width: 431px;
         padding-top: 11px;
+        padding-bottom: 15px;
         padding-right: 100px;
         font-size: 22px;
         font-weight: bold;
@@ -66,32 +73,35 @@ ul {
         margin-left: 3px;
         margin-top: 149px;
         width: 383px;
-        height: 43px;
+        min-height: 43px;
         padding-top: 14px;
         padding-left: 28px;
         padding-right: 34px;
+        padding-bottom: 12px;
         display: flex;
         justify-content: space-between;
         position: absolute;
+        bottom: 7px;
         border-radius: 0 15px 15px 0;
         }
     .header__email {
+        width: 50%;
         font-size: 14px;
         text-decoration: none;
     }
     .header__phone {
         margin-top: -1px;
         margin-right: 2px;
+        margin-left: 64px;
+        width: 50%;
         font-size: 18px;
-        font-family: 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Arial Narrow', Arial, Tahoma, sans-serif;
         text-decoration: none;   
     }
     .header__submenu {
-        position: absolute;
-        top: 225px;
-        bottom: 10px;
+        margin-top: 9px;
         min-width: 943px;
-        height: 35px;
+        height: 36px;
         display: flex;
         justify-content: space-between;
         padding-left: 0px;
@@ -100,13 +110,15 @@ ul {
         border: 1px solid #929292;
         border-radius: 17px;
     }
+    .header__link {
+        font-size: 12.15px;
+    }
     .header__link:hover {
         color: #ffde00;
     }
 .logo {
-    float: left;
     width: 209px;
-    height: 201px;
+    min-height: 201px;
     background: rgb(8, 8, 8);
     border: 1px solid #929292;
     border-radius: 17px;
@@ -117,12 +129,13 @@ ul {
     }
     .logo__text {
         margin-left: 37px;
-        margin-top: 16px;
-        font-size: 26.4px;
+        margin-top: 20.2px;
+        font-size: 22.5px;
+        letter-spacing: 3.2px;
         text-transform: uppercase;
     }
 .profile-enter {
-    padding-top: 6px;
+    padding-top: 5px;
     padding-right: 18px;
     padding-left: 22px;
     display: flex;
@@ -140,11 +153,15 @@ ul {
         color: #bfbfbf;
         font-size: 12px;
         margin-right: 6px;
+        margin-bottom: -23px;
     }
     .profile-enter__input {
-        margin-right: 21px;
-        width: 118px;
+        margin-right: 22px;
+        margin-bottom: -25px;
+        margin-left: 1px;
+        width: 116px;
         height: 22px;
+
     }
     .profile-enter__link {
         margin-right: 37px;
@@ -158,7 +175,7 @@ ul {
         cursor: pointer;
     }
 .input {
-    padding: 0 10px;
+    padding: 0 7px;
     border: none;
     border-radius: 7px;
     color: #000000;
@@ -181,9 +198,10 @@ ul {
     }
 .navigation {
     min-width: 1000px;
-    height: 48px;
+    min-height: 48px;
     padding: 15px 0px;
     background: url('../images/top-menu-bg.png') repeat-x;
+    background-size: 1% 100%;
 }
     .mob-menu{
         display: none;
@@ -208,7 +226,7 @@ ul {
         display: none;
     }
     .navigation__list {
-        margin-top: 1px;
+        margin-top: 0.5px;
         margin-left: 3px;
         justify-content: space-between;
         padding: 0 20px;
@@ -238,8 +256,8 @@ ul {
 }
 .left-column {
     float: left;
-    width: 225px;
-    padding-right: 31px;
+    width: 194px;
+    
 }
 .catalog-menu {
     color: #005bc1;
@@ -327,12 +345,14 @@ ul {
     clear: both;
 }
     .catalog__item {
+        width: 220px;
+        min-width: 220px;
         margin-right: 37px; 
         margin-left: -5px;
-        margin-bottom: 54px;   
+        margin-bottom: 53.5px;   
     }
     .catalog__title {
-        margin-top: 6.5px;
+        margin-top: 7px;
         width: 100%;
         color: #005bc1;
         font-size: 15px;
@@ -351,7 +371,7 @@ ul {
         border: 5px solid #00b31d;
     }
 .text {
-    margin-top: -238px;
+    margin-top: 3px;
     float: right;
     width: 726px;
     color: #666666;
@@ -361,7 +381,7 @@ ul {
     .text__title {
         margin-bottom: 18px;
         margin-left: -5px;
-        padding-top: 21px;
+        padding-top: 20px;
         font-weight: bold;
         font-size: 13px;
     }
