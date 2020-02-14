@@ -42,14 +42,10 @@ ul {
         position: relative;
         margin-left: 10px;
         width: 725px;
-        height: 201px;
         background: url('../images/background.jpg') no-repeat center;
         background-size: cover;
         border: 1px solid #929292;
         border-radius: 17px;
-    }
-    .header__content_mobile {
-        display: none;
     }
     .header__info {
         padding: 0 30px;

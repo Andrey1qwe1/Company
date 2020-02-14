@@ -32,9 +32,11 @@
 	.header__content {
 		display: none;
 	}
-	.header__content_mobile {
+	.header__content{
 		width: 50%;
 		display: block;
+		background: transparent;
+		border: none;
 	}
 	.header__info {
 		width: 220px;
