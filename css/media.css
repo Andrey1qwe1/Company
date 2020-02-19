@@ -95,6 +95,7 @@
 	}
 	.profile-enter__link {
 		margin-right: 32px;
+		margin-left: -9px;
 		font-size: 11.9px;
 	}
 	.cart-info {

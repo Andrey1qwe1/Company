@@ -66,7 +66,6 @@ var headerPhone = document.querySelector('.header__phone');
 var headerEmail = document.querySelector('.header__email');
 var headerSubmenu = document.querySelector('.header__submenu');
 
-
 window.onresize = function () {
 	if(window.screen.width < 481) {
 		logo.appendChild(headerContent);
@@ -79,6 +78,15 @@ window.onresize = function () {
 	}
 };
 
+if (document.documentElement.clientWidth < 481) {
+	logo.appendChild(headerContent);
+	headerContent.appendChild(headerTitle);
+	headerContacts.appendChild(headerEmail);
+}
+else {
+	logo.parentElement.insertBefore(headerContent, headerSubmenu);
+	headerContacts.appendChild(headerPhone);
+}
 
 
 
