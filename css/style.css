@@ -70,7 +70,7 @@ ul {
         margin-top: 149px;
         width: 383px;
         min-height: 43px;
-        padding-top: 14px;
+        padding-top: 13px;
         padding-left: 28px;
         padding-right: 34px;
         padding-bottom: 12px;
@@ -159,8 +159,8 @@ ul {
         height: 22px;
     }
     .profile-enter__link {
-        margin-right: 35px;
-        margin-left: -7px;
+        margin-right: 32.5px;
+        margin-left: -6px;
         font-size: 12.1px;
         font-weight: bold;
         color: #f6f6f6;
@@ -359,7 +359,7 @@ ul {
         color: #549ef1;
     }
     .catalog__image {
-        width: 209.5px;
+        width: 210px;
         height: 145px;
         border: 5px solid #797979;
         box-sizing: content-box;
