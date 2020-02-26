@@ -201,7 +201,7 @@
 	.catalog__title {
 		width: 100%;
 		margin-top: 8px;
-		font-size: 14.8px;
+		font-size: 14.9px;
 	}
 	.catalog-menu {
 		display: none;
@@ -211,7 +211,7 @@
 	}
 	.news {
 		width: 480px;
-		font-size: 15px;
+		font-size: 15.1px;
 		line-height: 20px;
 	}
 	.news__title {
@@ -256,7 +256,7 @@
 	.text__title {
 		font-size: 21px;
 		margin-top: 5px;
-		margin-bottom: 12px;
+		margin-bottom: 11px;
 	}
 	.text__paragraph {
 		text-align: left;
