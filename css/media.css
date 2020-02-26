@@ -67,6 +67,7 @@
 	.header__title {
 		position: static;
 		font-size: 22px;
+		letter-spacing: 0px;
 		line-height: 30px;
 		margin-left: -37px;
 		margin-top: 5px;
