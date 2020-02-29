@@ -97,7 +97,7 @@ ul {
     }
     .header__submenu {
         margin-top: 9px;
-        min-width: 943px;
+        width: 943px;
         height: 36px;
         display: flex;
         justify-content: space-between;
