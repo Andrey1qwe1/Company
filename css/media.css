@@ -9,11 +9,23 @@
 		width: 480px;
 		min-height: 290px;
 		min-width: 320px;
+		padding-bottom: 20px;
+	}
+	.header__flex-container {
+		flex-wrap: nowrap;
+		background: rgb(8, 8, 8);
+		border: 1px solid #929292;
+		border-radius: 17px;
+		width: 425px;
+		min-height: 201px;
+		margin-left: 3px;
 	}
 	.logo {
-		width: 425px;
-		margin-left: 3px;
+		width: 50%;
+		min-height: 199px;
 		display: flex;
+		border: 0px;
+		background: transparent;
 	}
 	.header-logo {
 		width: 50%;
@@ -29,12 +41,10 @@
 		letter-spacing: normal;
 		text-transform: uppercase;
 	}
-	.header__content {
-		display: none;
-	}
 	.header__content{
 		width: 50%;
-		display: block;
+		display: flex;
+		flex-direction: column-reverse;
 		background: transparent;
 		border: none;
 	}
@@ -46,7 +56,7 @@
 	.header__contacts {
 		width: 230px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		position: static;
 	}
 	.header__email {
@@ -71,11 +81,11 @@
 		line-height: 30px;
 		margin-left: -37px;
 		margin-top: 5px;
+		margin-bottom: 19px;
 	} 
 	.header__submenu {
 		margin-top: 18px;
 		margin-left: 3px;
-		margin-bottom: 20px;
 		width: 425px;
 		min-width: auto;
 		min-height: 36px;
