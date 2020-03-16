@@ -7,16 +7,27 @@ body {
     font-family: Arial, Tahoma, sans-serif;
 }
 a {
+    font: inherit;
     color: inherit;
     text-decoration: underline;
 }
 a:hover {
     color: inherit;
 }
-ul {
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
-
+p {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
 .clearfix::after {
     content: "";
     clear: both;
@@ -53,46 +64,34 @@ ul {
         z-index: 2;
     }
     .header__title {
-        margin-left: 288px;
-        margin-top: 11.5px;
-        min-height: 47px;
+        margin: 11px 0px 0px 288px;
+        padding: 10px 30px 15px 30px;
         max-width: 431px;
-        padding-top: 11px;
-        padding-bottom: 15px;
-        padding-right: 100px;
-        font-size: 23px;
-        letter-spacing: -0.6px;
-        font-weight: bold;
-        font-style: italic;
-        border-radius: 15px 0 0 15px;
+        min-height: 47px;
+        font: italic bold 22px Arial, Tahoma, sans-serif;
+        border-radius: 15px 0px 0px 15px;
     }
     .header__contacts {
-        margin-left: 3px;
-        margin-top: 149px;
+        position: absolute;
+        bottom: 5px;
+        margin: 0px 3px;
+        padding: 12px 34px 12px 28px;
         width: 383px;
         min-height: 43px;
-        padding-top: 13px;
-        padding-left: 28px;
-        padding-right: 34px;
-        padding-bottom: 12px;
         display: flex;
         justify-content: space-between;
-        position: absolute;
-        bottom: 7px;
         border-radius: 0 15px 15px 0;
         }
     .header__email {
-        margin-top: 2px;
+        margin-top: 3px;
         width: 50%;
-        font-size: 13.9px;
+        font-size: 14px;
         text-decoration: none;
     }
     .header__phone {
-        margin-right: 2px;
-        margin-left: 64px;
+        margin: 0px 2px 1px 64px;
         width: 50%;
-        font-size: 18px;
-        font-family: 'Arial Narrow', Arial, Tahoma, sans-serif;
+        font: 18px 'Arial Narrow', Arial, Tahoma, sans-serif;
         text-decoration: none;   
     }
     .header__submenu {
@@ -116,29 +115,23 @@ ul {
 .logo {
     width: 209px;
     min-height: 201px;
-    background: rgb(8, 8, 8);
+    background: #080808;
     border: 1px solid #929292;
     border-radius: 17px;
 }
     .logo__img {
-        margin-top: 42px;
-        margin-left: 63px;
+        margin: 42px 0px 0px 63px;
     }
     .logo__text {
-        margin-left: 37px;
-        margin-top: 18.5px;
-        font-size: 22.5px;
-        letter-spacing: 3.2px;
+        margin: 18px 0px 0px 38px;
+        font-size: 24px;
         text-transform: uppercase;
     }
 .profile-enter {
-    padding-top: 7px;
-    padding-right: 18px;
-    padding-left: 22px;
+    padding: 7px 18px 0px 22px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-family: Tahoma, sans-serif;
     font-family: Tahoma, sans-serif;
 }
     .profile-enter__label {
@@ -148,22 +141,17 @@ ul {
     }
     .profile-enter__text {
         color: #bfbfbf;
-        font-size: 12.1px;
-        letter-spacing: 0.1px;
-        margin-right: 5.5px;
-        margin-bottom: -24.5px;
+        font-size: 12px;
+        margin-right: 7px;
     }
     .profile-enter__input {
-        margin-right: 21px;
-        margin-bottom: -25px;
-        margin-left: 0.8px;
+        margin: 0px 20px -25px 1px;
         width: 116px;
         height: 22px;
     }
     .profile-enter__link {
-        margin-right: 34.5px;
-        margin-left: -7px;
-        font-size: 12.1px;
+        margin: 0px 34px 0px -6px;
+        font-size: 12px;
         font-weight: bold;
         color: #f6f6f6;
         text-decoration: underline;
@@ -179,19 +167,22 @@ ul {
     font-size: 12px;
     background-color: #687072;
 }  
+    .input_active {
+        background: linear-gradient(0deg, rgba(253,255,255,1) 0%, rgba(176,183,184,1) 100%);
+    }
 .cart-info {
-    padding: 13px 27px;
+    padding: 13px 27px 13px 29px;
     font-size: 12px;
-    color: #ffffff;
+    color: #fff;
+    background: url("../images/cart.png") no-repeat 0px 8px;
 }
     .cart-info__counter {
         font-weight: bold;
-        font-size: 12.5px;
+        font-size: 12px;
     }
     .cart-icon {
         float: left;
-        margin-right: 9px;
-        margin-top: -5px; 
+        margin: -5px 9px 0px 0px; 
     }
 .navigation {
     min-width: 1000px;
@@ -202,18 +193,10 @@ ul {
 }
     .mob-menu{
         display: none;
-        color: #ffffff;
+        color: #fff;
     }
-        .mob-menu__icon{
-            float: left;
-            width: 28px;
-            height: 26px;
-            background: url('../images/mob-menu-icon.png') no-repeat center;
-            background-size: cover;
-        }
         .mob-menu__btn{
-            margin-top: -8px;
-            margin-left: 2px;
+            margin: -8px 2px 0px 0px;
             padding: 10px 15px;
             color: inherit;
             background: transparent;
@@ -223,12 +206,10 @@ ul {
         display: none;
     }
     .navigation__list {
-        margin-top: 0.5px;
-        margin-left: 3px;
+        margin: 1px 0px 0px 3px;
         justify-content: space-between;
         padding: 0 20px;
-        list-style: none;
-        color: #ffffff;
+        color: #fff;
         font-size: 16px;
     }
     .navigation__list_shown {
@@ -247,19 +228,17 @@ ul {
     }
 .content {
     min-width: 1000px;  
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 48px 0px;
     background-color: #f6f6f6;
 }
 .left-column {
     float: left;
     width: 194px;
-    
 }
 .catalog-menu {
-    color: #005bc1;
-    font-size: 13.1px;
     margin-top: 3px;
+    color: #005bc1;
+    font-size: 13px;
 }
     .catalog-menu__title {
         margin-bottom: 23px;
@@ -268,8 +247,7 @@ ul {
         font-weight: bold;
     }
     .catalog-menu__item {
-        margin-left: 2px;
-        margin-bottom: 16px;
+        margin: 0px 0px 16px 2px;
         display: block;
         line-height: 13px;
     }
@@ -283,7 +261,8 @@ ul {
 }
     .news__title {
         margin-top: 73px;
-        margin-bottom: 20.5px;
+        margin-bottom: 21px;
+        margin: 73px 0px 21px;
         color: #058b7a;
         font-size: 17px;
         font-weight: bold;
@@ -301,11 +280,11 @@ ul {
     }
     .news__item {
         margin-left: 2px;
-        padding-bottom: 8.8px;
+        padding-bottom: 9px;
         line-height: 16px;
     }
     .news__item:nth-child(7) {
-        margin-bottom: 13px;
+        margin-bottom: 11px;
     }
     .news__item:nth-child(7)::after {
         content: '';
@@ -315,23 +294,20 @@ ul {
         color: #549ef1;
     }
     .news__date {
-        margin-bottom: -13px;
-        margin-top: 1px;
+        margin: 1px 0px -13px;
         padding: 5px 0 12px 0;
-        color: #666666;
+        color: #666;
         font-size: 10px;
     }
     .news__archive {
-        margin-top: 30px;
+        margin: 30px 0px 0px 2px;
         color: #005bc1;
         font-size: 13px;
-        margin-left: 2px;
     }
 .catalog {
-    margin-bottom: -5px;
-    margin-right: -35px;
+    margin: 0px -35px -5px 0px;
     float: right;
-    width: 756px;
+    width: 761px;
     padding-top: 6px;
     box-sizing: content-box;
     display: flex;
@@ -343,18 +319,15 @@ ul {
     clear: both;
 }
     .catalog__item {
+        margin: 0px 31px 54px 0px;
         width: 220px;
-        min-width: 220px;
-        margin-right: 36.5px; 
-        margin-left: -5px;
-        margin-bottom: 54px;   
+        min-width: 220px;   
     }
     .catalog__title {
-        margin-top: 6.5px;
-        margin-left: -1px;
+        margin: 7px 0px 0px -1px;
         width: 100%;
         color: #005bc1;
-        font-size: 15.1px;
+        font-size: 15px;
         font-weight: normal;
     }
     .catalog__item:hover .catalog__title {
@@ -370,25 +343,21 @@ ul {
         border: 5px solid #00b31d;
     }
 .text {
-    margin-top: 3px;
+    margin-top: 2px;
     float: right;
     width: 726px;
-    color: #666666;
+    color: #666;
     font-size: 12px;  
-    padding-left: 4px;
-    padding-right: 2px;
+    padding: 0px 2px 0px 4px;
 }
     .text__title {
-        margin-bottom: 18px;
-        margin-left: -6px;
+        margin: 0px 0px 18px -6px;
         padding-top: 20px;
         font-weight: bold;
-        font-size: 13.3px;
-        letter-spacing: 0.1px;
+        font-size: 13px;
     }
     .text__paragraph {
-        margin-bottom: 16px;
-        margin-left: -6px;
+        margin: 0px 0px 16px -6px;
         line-height: 16px;
         text-align: justify;
     }
@@ -400,18 +369,15 @@ ul {
     background: url("../images/back.png") repeat;
 }
     .footer__copyright {
-        margin-left: 2px;
-        margin-top: 1px;
+        margin: 1px 0px 0px 2px;
         width: 217px;
         color: #a4a4a4;
-        font-size: 10.5px;
+        font-size: 11px;
         float: left;
     }
     .footer__company {
-        margin-top: 9px;
-        margin-left: -1px;
-        font-family: Tahoma, sans-serif;
-        font-size: 12.3px;
+        margin: 5px 0px 0px -1px;
+        font: 12px Tahoma, sans-serif;
     }
     .footer__company_name {
         font-weight: bold;
@@ -420,14 +386,13 @@ ul {
         margin-top: 10px;
         float: left;
         color: #e7eeef;
-        font-size: 9.6px;
+        font-size: 9px;
         text-transform: uppercase;
     }
     .footer-logo__img {
-        margin-bottom: 6px;
-        margin-left: 7px;
-        height: 28px;
+        margin: 0px 0px 6px 7px;
         width: 35px;
+        height: 28px;
         text-align: center;
     }
     .footer-logo__text {
@@ -438,10 +403,7 @@ ul {
         float: left;
         width: 470px;
         font-size: 11px;
-        color: #ffffff;
-    }
-    .fooer__nav-list {
-        list-style: none;
+        color: #fff;
     }
     .footer__nav-item {
         margin-right: 6px;
@@ -454,17 +416,16 @@ ul {
         margin-left: 9px;
         content: "|";
         display: inline-block;
-        
     }
     .footer__nav-item:hover::after {
-        color: #ffffff;
+        color: #fff;
     }
     .footer__nav-item:last-child::after {
         display: none;
     }
 .developer {
     float: right;
-    color: #ffffff;
+    color: #fff;
     font-size: 11px;
     padding-top: 1px;
 }
@@ -472,8 +433,10 @@ ul {
         color: #ffde00;
     }
 .stat {
-    margin-top: 52px;
-    margin-left: 74px;
+    margin: 52px 0px 0px 74px;
     width: 88px;
     height: 31px;
+}
+.logo__letter {
+    margin-right: 2px;
 }

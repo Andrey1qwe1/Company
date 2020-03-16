@@ -15,39 +15,36 @@
     <div class="container">
       <div class="header__flex-container">
         <div class="logo">
-          <div class="header-logo">
-            
-            <img  class="logo__img" src="images/logo.png" alt="Логотип">
+          <img  class="logo__img" src="images/logo.png" alt="Логотип">
           <div class="logo__text">Company</div>
         </div>
-        </div>
         <div class="header__content">
-          <h2 class="header__info header__title">Нанотехнологии здоровья</h2>
+          <h1 class="header__info header__title">Нанотехнологии здоровья</h1>
           <div class="header__info header__contacts">
             <a href="mailto:info@company.ru" class="header__email">info@company.ru</a>
             <a href="tel:+7(383)349-18-49" class="header__phone">+7 (383) 349-18-49</a>
           </div>
         </div>
       </div>
-        <div class="header__submenu">
-          <form action="#" class="profile-enter">
-            <label class="profile-enter__label"><span class="profile-enter__text">Логин:</span> <input type="text" value="" class="input profile-enter__input"></label>
-            <label class="profile-enter__label"><span class="profile-enter__text">Пароль:</span> <input type="password" value="" class="input profile-enter__input"></label>
-            <button type="submit" class="profile-enter__link header__link">Войти</button>
-            <a href="#" class="profile-enter__link header__link">Регистрация</a>
-          </form>
-          <div class="cart-info">
-            <a href="#"><img class="cart-icon" src="images/cart.png" alt="Корзина"></a>В <a href="#" class="header__link">корзине</a> товаров &mdash; <span class="cart-info__counter">12</span>
-          </div>
+      <div class="header__submenu">
+        <form action="#" class="profile-enter">
+          <label class="profile-enter__label"><span class="profile-enter__text">Логин:</span> <input type="text" value="" class="input profile-enter__input"></label>
+          <label class="profile-enter__label"><span class="profile-enter__text">Пароль:</span> <input type="password" value="" class="input profile-enter__input"></label>
+          <button type="submit" class="profile-enter__link header__link">Войти</button>
+          <a href="#" class="profile-enter__link header__link">Регистрация</a>
+        </form>
+        <div class="cart-info">
+          В <a href="#" class="header__link">корзине</a> товаров &mdash; <span class="cart-info__counter">12</span>
         </div>
+      </div>
     </div>
   </header>
   <nav class="navigation">
     <div class="container">
       <div class="mob-menu navigation__mob-menu">
-        <button type="button" class="mob-menu__btn">Меню</button><div class="mob-menu__icon"></div>
+        <button type="button" class="mob-menu__btn">Меню</button>
       </div>
-      <ul class="navigation__list navigation__list_shown">
+      <ul class="navigation__list navigation__list_hidden">
         <li class="navigation__item"><a class="navigation__link" href="#">Главная</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Каталог</a>
         <ul class="navigation__submenu navigation__submenu_hidden">
@@ -67,16 +64,16 @@
       </ul>
     </div>
   </nav>
-  <div class="content clearfix">
+  <main class="content clearfix">
     <div class="container">
-    	<main class="catalog ">
+    	<section class="catalog ">
         <div class="catalog__item">
           <a href="#"><img src="images/1.jpg" alt="Электронные сигареты" class="catalog__image"></a>
-          <h3 class="catalog__title"><a href="">Электронные сигареты</a></h3>
+          <h3 class="catalog__title"><a href="#">Электронные сигареты</a></h3>
         </div>
         <div class="catalog__item">
           <a href="#"><img src="images/2.jpg" alt="Электронные сигареты" class="catalog__image"></a>
-          <h3 class="catalog__title"><a href="">Трубки</a></h3>
+          <h3 class="catalog__title"><a href="#">Трубки</a></h3>
         </div>
         <div class="catalog__item">
           <a href="#"><img src="images/3.jpg" alt="Электронные сигареты" class="catalog__image"></a>
@@ -100,11 +97,11 @@
         </div>
         <div class="catalog__item">
           <a href="#"><img src="images/8.jpg" alt="Электронные сигареты" class="catalog__image"></a>
-          <h3 class="catalog__title"><a href="">Подарочне наборы</a></h3>
+          <h3 class="catalog__title"><a href="#">Подарочне наборы</a></h3>
         </div>
-      </main>
+      </section>
       <aside class="left-column clearfix">
-        <nav class="catalog-menu">
+        <section class="catalog-menu">
           <h3 class="catalog-menu__title">Каталог</h3>
           <a href="#" class="catalog-menu__item">Электронные сигареты</a>
           <a href="#" class="catalog-menu__item">Трубки</a>
@@ -114,35 +111,35 @@
           <a href="#" class="catalog-menu__item">Зарядные устройства</a>
           <a href="#" class="catalog-menu__item">Аксессуары</a>
           <a href="#" class="catalog-menu__item">Подарочне наборы</a>
-        </nav>
-        <div class="news">
+        </section>
+        <section class="news">
           <h3 class="news__title">Новости</h3>
-          <div class="news__item">
+          <article class="news__item">
             <a href="#">Поздравительная речь президента международной корпорации Хуа Шэн господина Ли Вея в Международный… </a>
-            <p class="news__date">2010-03-03</p>
-          </div>
-          <div class="news__item">
+            <div class="news__date">2010-03-03</div>
+          </article>
+          <article class="news__item">
             <a href="#">Собрание правления киевского филиала</a>
-            <p class="news__date">2010-02-27</p>
-          </div>
-          <div class="news__item">
+            <div class="news__date">2010-02-27</div>
+          </article>
+          <article class="news__item">
             <a href="#">Петропавловскому офису международной корпорации Хуа Шэнисполнился 1 год</a>
-            <p class="news__date">2010-02-23</p>
-          </div>
-          <div class="news__item">
+            <div class="news__date">2010-02-23</div>
+          </article>
+          <article class="news__item">
             <a href="#">Проведение церемонии награждения в бишкекском филиале</a>
-            <p class="news__date">2010-02-22</p>
-          </div>
-          <div class="news__item">
+            <div class="news__date">2010-02-22</div>
+          </article>
+          <article class="news__item">
             <a href="#">Сотрудники иркутского филиала отметили китайский новый</a>
-            <p class="news__date">2010-02-15</p>
-          </div>
-          <div class="news__item">
+            <div class="news__date">2010-02-15</div>
+          </article>
+          <article class="news__item">
             <a href="#">Празднование китайского нового года в одесском филиале</a>
-            <p class="news__date">2010-02-14</p>
-          </div>
+            <div class="news__date">2010-02-14</div>
+          </article>
           <a href="#" class="news__archive">Архив новостей</a>
-        </div>
+        </section>
       </aside>
       <div class="text">
         <h2 class="text__title">Высокое качество японских ножей</h2>
@@ -152,7 +149,7 @@
         <p class="text__paragraph"> Дамасская сталь - это не просто причудливый узор на лезвии ножа, это технология, сочетающая твердую сталь сердцевины клинка для сохранения остроты ножа и множество слоев мягкой стали, которая и создает рисунок при заточке, для придания гибкости и прочности острой, но хрупкой сердцевине. По этой технологии делались древние острейшие самурайские мечи катаны. Ножи из дамасской стали прочны, надежны и долговечны, что подтверждено многолетним опытом. Не зря ножи из дамасской стали бестселлерами продаж. Есть также товары, которые являются результатом современных научных технологий: титановые, керамические ножи из Японии.</p>
       </div>
     </div>
-  </div>
+  </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__copyright">
